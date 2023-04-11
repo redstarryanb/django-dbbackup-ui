@@ -22,7 +22,7 @@ setup(
                  'dbbackup_ui'},
     include_package_data=True,
     install_requires=[
-        'django-dbbackup>=3.1.3,<3.3'
+        'django-dbbackup>=3.3'
     ],
     license="BSD license",
     zip_safe=False,
