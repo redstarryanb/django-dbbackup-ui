@@ -7,7 +7,7 @@ from django.core.files.storage import get_storage_class
 
 
 def backup_database(database_name):
-    connector = get_connector('default')
+    connector = get_connector(database_name)
     filename = connector.generate_filename()
     outputfile = connector.create_dump()
     compressed_file, filename = utils.compress_file(outputfile, filename)
